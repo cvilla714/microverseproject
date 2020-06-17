@@ -1,14 +1,24 @@
  
+       body {
+         font-family: "Open Sans";
+         font-size: 16px;
+         display: flex;
+         background-image: url(https://i.imgur.com/glHqUmZ.jpg);
+         background-attachment: fixed;
+         background-size: cover;
+         background-position-y: top;
+       }
+       
        #navbar {
-        position: fixed;
         vertical-align: top;
-        background-color:transparent;
+        background-color: #3262955c;
         top: 0px;
         left: 0px;
-        width: 300px;
+        width: 25%;
         height: 100%;
         border-right: solid;
         border-color: rgba(22, 20, 0, 0.4);
+        position: fixed;
           }
 
         
@@ -21,7 +31,7 @@
           }
 
         #navbar li {
-          color: #4d4e53;
+          color: #030a29;
           border-top: 1px solid;
           list-style: none;
           position: relative;
@@ -32,18 +42,19 @@
           #navbar a {
             display: block;
             padding: 10px 30px;
-            color: #4d4e53;
+            color: #fff;
             text-decoration: none;
             cursor: pointer;
           }
 
           header {  
 
-              color: black;  
+              color: midnightblue;  
               margin: 10px;  
               text-align: center;  
               font-size: 1.8em;  
-              font-weight: thin;  
+              font-weight: thin;
+              text-decoration: solid;
 
             }  
 
@@ -52,9 +63,10 @@
               margin-left: 310px;
               padding: 20px;
               margin-bottom: 110px;
+              width: 75%;
             }
             section article {
-            color:cornflowerblue;
+            color:#326295;
             margin: 15px;
             font-size: 20px;
             }
@@ -63,9 +75,9 @@
             }
 
             section li {
-              font-size: 15px;
+              font-size: 16px;
               font-family: Verdana, Geneva, Tahoma, sans-serif;
-             margin: 15px 0px 0px 20px;
+              margin: 15px 0px 0px 20px;
               }
 
               code {

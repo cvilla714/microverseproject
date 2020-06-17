@@ -1,260 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>VBA Programming</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" type="text/css" href="techdoc.css">
-              
-   </head>
+  <head>
+    <title>FIFA Information</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="techdoc.css" />
+  </head>
 
-    <body>
-            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-            
-            <nav id="navbar">
-                <header>VBA Programming</header>
-                <ul>
-                  <li><a class="nav-link" href="#What_is_VBA">What is VBA</a></li>
-                  <li><a class="nav-link" href="#How_do_i_start_with_VBA_Excel">How do i start with VBA Excel</a></li>
-                  <li><a class="nav-link" href="#What_can_I_do">What can I do</a></li>
-                  <li><a class="nav-link" href="#Are_VB_and_VBA_the_same">Are VB and VBA the same</a></li>
-                  <li><a class="nav-link" href="#What_is_the_difference_between_a_macro_a_script_and_VBA">What is the difference between a macro a script and VBA</a></li>
-                  <li><a class="nav-link" href="#What_does_a_VBA_Developer_do?">What does a VBa Developer do?</a></li>
-                  <li><a class="nav-link" href="#Why_is_VBA_important">Why is VBA important</a></li>
-                  <li><a class="nav-link" href="#Is_VBA_a_good_programming_language?">Is VBA a good programming language?</a></li>
-                   <li><a class="nav-link" href="#Funtions">Funtions</a></li>
-                  <li><a class="nav-link" href="#Find_the_Last_Row">Find the Last Row</a></li>
-                  <li><a class="nav-link" href="#Loops">Loops</a></li>
-                </ul>
-              </nav>
-            
-            <main id="main-doc">
-              <section class="main-section" id="What_is_VBA">
-                <header>What is VBA</header>
-                <article>
-                  <p>
-                    If you’ve ever used macros in Excel, you’ve used Visual Basic for Applications (VBA). VBA is human-readable(and editable) programming code that gets generated
-                     when you record a macro.  When you run a macro it’s this code that Excel reads to replay your actions.
-                    The following is a series of frequently asked questions about VBA, with answers for both newcomers to Excel macros and seasoned programmers.
-                  </p>  
-                    <p class="head">What is VBA used for in Excel?</p>
-                         <ul>
-                           <li>VBA is used to write macros, which automate simple and complex tasks in Excel.</li>
-                           <li>Users of Microsoft Excel will often find themselves repeating the same series of tasks over and over again</li>
-                           <li>Sometimes these are minor tasks like copy-pasting subsets of data to different sheets</li>
-                            <li>sometimes the tasks are more complex like uploading data to a website</li>
-                            <li>With VBA, macros can be programmed to automate tasks like these, turning a series of manual operations into a single button click.</li>
-                         </ul>                   
-                </article>
-               </section>
-                <section class="main-section" id="How_do_i_start_with_VBA_Excel">
-                <header>How do i start with VBA Excel</header>
-                <article>
-                  <p>
-                    The easiest way to get started with macros is to record them using the Macro Recorder built into Excel.  
-                    The macro recorder generates VBA code which you can read and edit, giving you a stepping-stone to learn how to code your own macros from scratch.
-                  </p>  
-                    <p class="head">How can I access VBA code?</p>
-                         <ul>
-                           <li>The VBA editor can be opened at any time by pressing the ALT+F11 keyboard shortcut.
-                           From here, you can access the code for all open workbooks.
-                           </li>
-                           <li>You can double-click any workbook, sheet, or module object in the Project window to show the VBA code contained in it
-                            Recorded macros will always appear in modules, which is where you’ll typically want to write your own macros too.
-                          </li>
-                         </ul>                   
-                </article>
-               </section>
-               <section class="main-section" id="What_can_I_do">
-                 <header>What can I do</header>
-                  <article>
-                     <p class="head">Advantages of using VBA Code</p>
-                           <ul>
-                             <li>First of all: if there’s something you can do in Excel, you can write VBA code to do the same thing.  
-                               If you learn the commands (using the macro recorder or online resources), you can string together 
-                               several actions together in a single macro.
-                             </li>
-                             <li>Second: you can use VBA to write user-defined functions for use in worksheet
-                                <code>formulas – much like the “=SUM()” function, for example.</code>  
-                                Although Excel already packs a large variety of functions, if you find yourself wanting a function that’s more specific 
-                                to your industry or workplace, you can add it with VBA.
-                            </li>
-                            <li>
-                              Third: you can use VBA to add logic (If statements) and loops (repeat actions) to your macros. 
-                              This means that a macro can be more than a recording of actions – it can be a real program with smart repetition and decision-making.
-                            </li>
-                            <li>
-                              Fourth: VBA allows you to build user interfaces, giving users an easier way to interact with your macros.  
-                              These interfaces can be simple buttons on a worksheet, or complex UserForms with rich controls like TreeViews and FlexGrids.
-                            </li>
-                            <li>
-                              Fifth but not finally: VBA allows you to harness almost any resource your computer or the internet by using external DLL libraries.  
-                              You can automate a lot more than Excel this way, like accessing web services and databases, parsing XML files, 
-                              interoperating with other Microsoft Office applications, and much, much more.
-                            </li>
-                           </ul>                   
-                  </article>
-               </section>
-               <section class="main-section" id="Are_VB_and_VBA_the_same">
-                  <header>Are VB and VBA the same</header>
-                    <article>
-                          <p class="head">Diffences between VB and VBA</p>
-                            The VBA language is identical to Visual Basic 6.0.  If you have experience writing VB6 code, you can write VBA.
-                            The VB Editor in Excel is a stripped-down version of the VB6 editor, with similar debugging capabilities and components 
-                            like the ‘Project’ and ‘Properties’ windows. 
-                          </p>
-                         <p>
-                            The Form editor is also very similar, although it has some limitations (like the inability to create control arrays).
-                            Less similar to VBA is Visual Basic .NET.  Although these languages share many of the same keywords and syntaxes, 
-                            the code between these languages is less interoperable.  You wouldn’t have to re-write much (if anything) to port a procedure 
-                            from VB6 to VBA, but you couldn’t do the same from VB.NET.
-                        </p>     
-                      </article>
-               </section>
-               <section class="main-section" id="What_is_the_difference_between_a_macro_a_script_and_VBA">
-                    <header>What is the difference between a macro a script and VBA</header>
-                    <article>
-                      <p class="head">Macro vs Script vs VBA</p>
-                        VBA is just the language that macros are written with.  If your macro is a story, VBA is the grammar and dictionary it’s written with.
-                        Scripts use a limited subset of the Visual Basic language and are used for different purposes. Macros are stored inside Excel workbook 
-                        files and can only be run from inside Excel.  They’re typically used to automate various Excel functions and add extra functionality to workbooks.
-                        Scripts are stored in text files using the .VBS extension and can be run from inside Windows or executed by other programs.  
-                        Sysadmins will use scripts to automate certain administrative tasks on a computer or network.
-                      </p>
-                    </article>
-               </section>
-               <section class="main-section" id="What_does_a_VBA_Developer_do?">
-                <header>What does a VBa Developer do?</header>
-                    <article>
-                        <p class="head">Role of a Developer</p>
-                        <p>Often, people who create macros aren’t developers  
-                          <ul>
-                            <li>they’re analyst</li>
-                            <li>traders</li> 
-                            <li>accountants</li>
-                            <li>or scientists</li>
-                          </ul>
-                             who have had training in programming and use VBA on more of an ad-hoc basis.
-                            People who focus on VBA development tend to create more refined tools – they create 
-                            <ul>
-                              <li>Add-ins</li>
-                              <li>User interfaces with Forms</li>
-                              <li>Interactive dashboards</li>
-                              <li>report generators, and more.</li>
-                            </ul>
-                          </p>
-                     </article>
-                  </section>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-                  <section class="main-section" id="Why_is_VBA_important">
-                    <header>Why is VBA important</header>
-                        <article>
-                            <p class="head">Importance</p>
-                            <p>
-                              VBA is included as standard in all Microsoft Office applications, including Excel.  Excel is one of the most popular programs 
-                              in the world and finds use in a wide variety of fields and workplaces, all with their own unique workflows and use-cases.
-                              By not using automation, countless work-hours are wasted every week performing boring, repetitive tasks at a human speed. 
-                              Automation with VBA can perform the same tasks at the computer’s lightning-quick pace, letting users focus on the important
-                              aspects of their work, being more productive – and maybe getting out of the office a little earlier!
-                              </p>
-                         </article>
-                      </section>
-                      <section class="main-section" id="Is_VBA_a_good_programming_language?">
-                        <header>Is VBA a good programming language?</header>
-                            <article>
-                                <p class="head">VBA can’t be used to create standalone programs</p>
-                                <p>
-                                  VBA has the typical programming elements like variables, arrays, functions, decisions and loops.  It has a syntax that’s easy to read, 
-                                  and can harness a lot of power from Windows and other services.
-                                  On the downside, error-handling isn’t very elegant in VBA.  While other languages use “try-catch-finally” code blocks, 
-                                  VBA uses “On Error” statements to modify how macros behave when an error occurs.
-                                  Additionally, VBA can’t be used to create standalone programs, web sites or services, and it can’t interface with newer programming 
-                                  APIs like the .NET platfor
-                                  </p>
-                             </article>
-                          </section>
-                          <section class="main-section" id="Funtions">
-                            <header>Funtions</header>
-                                <article>
-                                    <p class="head">Things you can do</p>
-                                    <p>The VBA InputBox function displays a dialog box, prompting the user for input, and containing an OK button and a Cancel button.
-                                       The function returns a text string containing the user's input if the OK button is selected or an empty text string if the Cancel button is selected.
-                                      The syntax of the InputBox function is:
-                                      <code>InputBox( Prompt, [Title], [Default], [XPos], [YPos], [HelpFile], [Context] )</code>
-                                      <img src="inputbox.png" alt="inputbox dialog">
-                                    </p>
-                                    <p>
-                                      The Excel VBA InStr function returns the position of a substring within a string, as an integer.
-                                      If the substring is not found, the function returns the value 0.
-                                      The syntax of the InStr function is:
-                                      <code>InStr( [Start], String1, String2, [Compare] )</code>
-                                      <img src="instr.png" alt="instring_function">
-                                    </p>
-                                     <p>
-                                      The VBA Round function rounds a numbers to a specified number of decimal places.
-                                      The syntax of the function is:
-                                      <code>Round( Number, [NumDigitsAfterDecimal] )</code>
-                                      <img src="round.png" alt="rounding">
-                                    </p> 
-                                   <p>
-                                    The VBA UCase function converts a supplied String into upper case text.
-                                    The syntax of the function is:
-                                    <code>UCase( String )</code>
-                                    <img src="ucase.png" alt="uppercase">
-                                   </p>
-                                    
-                                 </article>
-                              </section>
-                              <section class="main-section" id="Find_the_Last_Row">
-                                <header>Find the Last Row</header>
-                                    <article>
-                                        <p class="head">Last Row</p>
-                                        Finding the last used row, column, or cell is one very common task when writing macros and VBA applications. 
-                                        Like anything in Excel and VBA, there are many different ways to accomplish this.
-                                        Choosing the right method mostly depends on what your data looks like.
-                                        The Range.End() Method :
-                                        The Range.End method is very similar to pressing the Ctrl+Arrow Key keyboard shortcut.  
-                                        In VBA we can use this method to find the last non-blank cell in a single row or column.
-                                        <code>Sub Range_End_Method()
-                                          'Finds the last non-blank cell in a single row or column
-                                          
-                                          Dim lRow As Long
-                                          Dim lCol As Long
-                                              
-                                              'Find the last non-blank cell in column A(1)
-                                              lRow = Cells(Rows.Count, 1).End(xlUp).Row
-                                              
-                                              'Find the last non-blank cell in row 1
-                                              lCol = Cells(1, Columns.Count).End(xlToLeft).Column
-                                              
-                                              MsgBox "Last Row: " & lRow & vbNewLine & _
-                                                      "Last Column: " & lCol
-                                            
-                                          End Sub</code>
-                                    </article>
-                                  </section>
-                                  <section class="main-section" id="Loops">
-                                    <header>Loops</header>
-                                        <article>
-                                            <p class="head">Using Loops</p>
-                                           To get the most out of Excel and VBA, you need to know how to use loops efficiently.
-                                           In VBA, loops allow you to go through a set of objects/values and analyze it one by one. 
-                                           You can also perform specific tasks for each loop.
-                                           Here are some more practical examples where VBA loops can be useful:
-                                           <ul>
-                                              <li>Looping through a range of cells and analyzing each cell (highlight cells with a specific text in it).</li>
-                                              <li>Loop through all the open workbooks (and save each workbook or close all except the active workbook).</li>
-                                              <li>Loop through all the characters in a cell (and extract the numeric part from a string).</li>
-                                              <li>Loop through all the values an array.</li>
-                                              <li>Loop through all the charts/objects (and give a border or change the background color).</li>
-                                           </ul>
-                                           <p>exmaple of loops</p>
-                                           <img src="forloop.png" alt="forloop">
-                                        </article>
-                                      </section>
+    <nav id="navbar">
+      <header>What is FIFA</header>
+      <ul>
+        <li><a class="nav-link" href="#About_Fifa">About FIFA</a></li>
+        <li><a class="nav-link" href="#Operations">Operations</a></li>
+        <li><a class="nav-link" href="#What_can_fifa_do?">What can FIFA do?</a></li>
+        <li><a class="nav-link" href="#Anthem">Anthem</a></li>
+        <li><a class="nav-link" href="#Administrative_cost">Administrative cost</a></li>
+        <li><a class="nav-link" href="#Recognitions_and_Awards">Recognitions and awards</a></li>
+        <li><a class="nav-link" href="#Governance_of_FIFA">Governance of FIFA</a></li>
+        <li><a class="nav-link" href="#Some_History">Some history</a></li>
+        <li><a class="nav-link" href="#Corruption">Corruption</a></li>
+      </ul>
+    </nav>
 
-            </main>
-    </body>
+    <main id="main-doc">
+      <section class="main-section" id="About_Fifa?">
+        <header>What is FIFA</header>
+        <article>
+          <p>
+            FIFA was founded in 1904[3] to oversee international competition among the national associations of Belgium, Denmark, France, Germany, the Netherlands, Spain, Sweden, and Switzerland. Headquartered in Zürich, its membership now comprises 211 national associations. These national
+            associations must each also be members of one of the six regional confederations into which the world is divided: Africa, Asia, Europe, North & Central America and the Caribbean, Oceania, and South America.
+          </p>
 
+          <p>
+            Today, FIFA outlines a number of objectives in the organizational Statues, including growing football internationally, providing efforts to ensure football is accessible to everyone, and advocating for integrity and fair play.[4] FIFA is responsible for the organization and promotion of
+            football's major international tournaments, notably the World Cup which commenced in 1930 and the Women's World Cup which commenced in 1991. Although FIFA does not solely set the rules of football, that being the responsibility of the International Football Association Board of which
+            FIFA is a member, it applies and enforces the rules across all FIFA competitions.[5] All FIFA tournaments generate revenue from sponsorship; in 2018, FIFA had revenues of over US $4.6 billion, ending the 2015–2018 cycle with a net positive of US$1.2 billion, and had cash reserves of over
+            US$2.7 billion.[6]
+          </p>
+
+          <p class="head">Several Facts About FIFA</p>
+          <ul>
+            <li>Abbreviation is <span>FIFA stands for French: Fédération Internationale de Football Association</span></li>
+            <li>It was founded in 21 May 1904; 116 years ago</li>
+            <li>It was founded in Paris, France</li>
+            <li>The Legal Status is Governing body of association footbal</li>
+            <li>HeadQuarters are in Zürich, Switzerland</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Operations">
+        <header>Operations</header>
+        <article>
+          <p>
+            IFAB is made up of representatives from each of the United Kingdom's pioneering football associations—England's Football Association (The FA), the Scottish Football Association (SFA), the Football Association of Wales (FAW) and Northern Ireland's Irish Football Association (IFA)—and the
+            Fédération Internationale de Football Association (FIFA), the international governing body for football. Each British association has one vote and FIFA has four. IFAB deliberations must be approved by three-quarters of the vote, or at least six of the eight votes.[3] Thus, FIFA's
+            approval is necessary for any IFAB decision, but FIFA alone cannot change the Laws of the Game—they need to be agreed by at least two of the UK members. As of 2016, all members must be present for a binding vote to proceed.[3]
+          </p>
+
+          <p>
+            The Board meets twice a year, once to decide on possible changes to the rules governing the game of Football (the Annual General Meeting (AGM)) and once to deliberate on its internal affairs (the Annual Business Meeting (ABM)). In FIFA World Cup years, the AGM is held at FIFA's offices;
+            otherwise, it rotates between Northern Ireland, Wales, England and Scotland in that order.[3] Four weeks before the AGM, the member associations must send their written proposals to the secretary of the host association. FIFA then prints a list of suggestions that are distributed to all
+            other associations for examination. The AGM is held either in February or March and the ABM is held between September and October.[4] In cases of necessity, the Board can meet in a Special Meeting in addition to the two ordinary annual meetings. As of December 2012, the last Special
+            Meeting was hosted by FIFA in Zurich on 5 July 2012.[5]
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="What_can_fifa_do?">
+        <header>What can FIFA do?</header>
+        <article>
+          <p class="head">What FIFA do?</p>
+          <ul>
+            <li>Is the biggest Football Association</li>
+            <li>It promots football tournaments around the globe</li>
+            <li>The most famous tournament organized by FIFA is the WORLD CUP</li>
+            <li>
+              Fourth: VBA allows you to build user interfaces, giving users an easier way to interact with your macros. These interfaces can be simple buttons on a worksheet, or complex UserForms with rich controls like TreeViews and FlexGrids.
+            </li>
+            <li>
+              Fifth but not finally: VBA allows you to harness almost any resource your computer or the internet by using external DLL libraries. You can automate a lot more than Excel this way, like accessing web services and databases, parsing XML files, interoperating with other Microsoft Office
+              applications, and much, much more.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Anthem">
+        <header>Anthem</header>
+        <article>
+          <p class="head">Anthem</p>
+          <p>
+            Akin to the UEFA Champions League, FIFA has adopted an anthem composed by the German composer Franz Lambert since the 1994 FIFA World Cup. It has been re-arranged and produced by Rob May and Simon Hill.[20][21] The FIFA Anthem is played at the beginning of official FIFA sanctioned
+            matches and tournaments such as international friendlies, the FIFA World Cup, FIFA Women's World Cup, FIFA U-20 World Cup, FIFA U-17 World Cup, Football at the Summer Olympics, FIFA U-20 Women's World Cup, FIFA Women's U-17 World Cup, FIFA Futsal World Cup, FIFA Beach Soccer World Cup
+            and FIFA Club World Cup.[22]
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Administrative_cost">
+        <header>Administrative cost</header>
+        <article>
+          <p>
+            FIFA publishes its results according to IFRS. The total compensation for the management committee in 2011 was 30 million for 35 people. Blatter, the only full-time person on the committee, earned approximately two million Swiss francs, 1.2 million in salary and the rest in bonuses. A
+            report in London's The Sunday Times in June 2014 said the members of the committee had their salaries doubled from $100,000 to $200,000 during the year. The report also said leaked documents had indicated $4.4 million in secret bonuses had been paid to the committee members following the
+            2010 FIFA World Cup in South Africa.
+          </p>
+          <ul>
+            <li>Total compensation for the management committee in 2011 was 30 million for 35 people.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Recognitions_and_Awards">
+        <header>Recognitions and awards</header>
+        <article>
+          <p class="head">FIFA holds an annual awards ceremony, The Best FIFA Football Awards since 2016</p>
+          <p>which recognizes both individual and team achievements in international association football. Individually, the top men's player is awarded The Best FIFA Men's Player and the top women's player is The Best FIFA Women's Player.</p>
+          <ul>
+            <li>Adidas</li>
+            <li>Coco-Cola</li>
+            <li>Visa</li>
+            <li>Qatar Airways</li>
+          </ul>
+          Are A few of sponsors that FIFA Has
+          <ul>
+            <li>Add-ins</li>
+            <li>User interfaces with Forms</li>
+            <li>Interactive dashboards</li>
+            <li>report generators, and more.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Governance_of_FIFA">
+        <header>Governance of FIFA</header>
+        <article>
+          <p>
+            The laws that govern football, known officially as the Laws of the Game, are not solely the responsibility of FIFA; they are maintained by a body called the International Football Association Board (IFAB). FIFA has members on its board (four representatives); the other four are provided
+            by the football associations of the United Kingdom: England, Scotland, Wales, and Northern Ireland, who jointly established IFAB in 1882 and are recognized for the creation and history of the game. Changes to the Laws of the Game must be agreed by at least six of the eight delegates. The
+            FIFA Statutes form the overarching document guiding FIFA's governing system. The governing system is divided into separate bodies that have the appropriate powers to create a system of checks and balances. It consists of four general bodies: the congress, the executive committee, the
+            general secretariat, and standing and ad-hoc committees.
+          </p>
+          <ul>
+            <li>FIFA has 8 members on its boards (four are representatives and four provided by the football ass. Of the United Kingdom)</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Some_History">
+        <header>History</header>
+        <article>
+          <p>
+            The decisions of each year's Annual General Meeting of the Board regarding changes to the Laws of the Game enter into force from 1 July (and are binding on FIFA and on the other members of the Board, and, given that FIFA's Statutes establish that FIFA and its member associations and
+            affiliates adhere to the Laws of the Game laid down by IFAB, those changes bind also FIFA's other member associations, FIFA's continental confederations of member associations, and the subnational entities of the national associations) but confederations, member associations and other
+            bodies whose current season has not ended by 1 July may delay the introduction of the adopted alterations to the Laws of the Game in their competitions until the beginning of their next season.[6] As well as permanent changes to the Laws, IFAB also authorises trials of potential
+            amendments.[7]
+          </p>
+
+          <p class="head">History</p>
+          <ul>
+            <li>The French name and acronym are used even outside French-speaking countries</li>
+            <li>The first president of FIFA was Robert Guérin.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Corruption">
+        <header>Corruption</header>
+        <article>
+          <p>
+            In May 2006, British investigative reporter Andrew Jennings' book Foul! The Secret World of FIFA: Bribes, Vote-Rigging and Ticket Scandals (Harper Collins) caused controversy within the football world by detailing an alleged international cash-for-contracts scandal following the collapse
+            of FIFA's marketing partner International Sport and Leisure (ISL), and revealed how some football officials have been urged to secretly repay the sweeteners they received. The book also alleged that vote-rigging had occurred in the fight for Sepp Blatter's continued control of FIFA as
+            the organization's president. Shortly after the release of Foul! a BBC Panorama exposé by Jennings and producer Roger Corke, screened on 11 June 2006, reported that Blatter was being investigated by Swiss police over his role in a secret deal to repay more than £1m worth of bribes
+            pocketed by football officials. Lord Triesman, the former chairman of the English Football Association, described FIFA as an organization that "behaves like a mafia family", highlighting the organization's "decades-long traditions of bribes, bungs and corruption".[52] All testimonies
+            offered in the Panorama exposé were provided through a disguised voice, appearance, or both, save one: Mel Brennan, a former CONCACAF official, became the first high-level football insider to go public with substantial allegations of corruption, nonfeasance and malfeasance by CONCACAF
+            and FIFA leadership. Brennan—the highest-level African-American in the history of world football governance—joined Jennings, Trinidadian journalist Lisana Liburd and many others in exposing allegedly inappropriate allocations of money by CONCACAF, and drew connections between ostensible
+            CONCACAF criminality and similar behaviours at FIFA. Since then, and in the light of fresh allegations of corruption by FIFA in late 2010,[53] both Jennings and Brennan remain highly critical of FIFA has Brennan called directly for an alternative to FIFA to be considered by the
+            stakeholders of the sport throughout the world
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
